@@ -1,0 +1,27 @@
+{
+  "name": "K\u2022POP Memory Rush",
+  "short_name": "K\u2022POP Rush",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0b0618",
+  "theme_color": "#6200ea",
+  "description": "K-pop\u2013inspired memory game with power-ups, obstacles, speed boosts \u2014 offline PWA.",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}

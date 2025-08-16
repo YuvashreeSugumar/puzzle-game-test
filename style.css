@@ -1,0 +1,14 @@
+:
+:root{--ink:#0b0618;--glass:#ffffff18;--light:#eaf2ff;--violet:#6200ea;--cyan:#03dac6;--pink:#ec407a;}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--ink);color:var(--light);font-family:system-ui,Segoe UI,Roboto,Arial}
+.container{max-width:1200px;margin:0 auto;padding:16px}.header{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.title{display:flex;gap:12px;align-items:center;font-weight:900;letter-spacing:.6px;font-size:clamp(20px,3.2vw,34px)}.title img{height:42px;border-radius:12px}
+.controls{display:flex;gap:8px;flex-wrap:wrap}button{border:none;padding:10px 14px;border-radius:14px;background:var(--glass);color:#fff;cursor:pointer;font-weight:800;backdrop-filter:blur(10px);box-shadow:0 10px 24px rgba(0,0,0,.35);transition:.2s}
+button:hover{transform:translateY(-2px);background:#ffffff2b}button.primary{background:linear-gradient(135deg,var(--violet),var(--cyan))}
+.hud{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}.panel{background:var(--glass);border:1.4px solid #ffffff24;border-radius:16px;padding:8px 10px;display:flex;gap:10px;align-items:center}
+.badge{padding:6px 10px;border-radius:999px;background:#ffffff22;font-weight:800}.stage{background:url('assets/bg-1200x600.webp') center/cover no-repeat;border-radius:16px;min-height:180px;margin:8px 0;border:1px solid #ffffff24}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}.card{position:relative;aspect-ratio:1/1;border-radius:14px;transform-style:preserve-3d;transition:transform .35s;background:#120a23;overflow:hidden;border:2px solid #ffffff22;box-shadow:0 10px 24px rgba(0,0,0,.4)}
+.card.flip{transform:rotateY(180deg)}.card .face{position:absolute;inset:0;display:grid;place-items:center;backface-visibility:hidden}.card .front{transform:rotateY(180deg)}
+.card img{width:86%;height:86%;object-fit:contain}.toast{position:fixed;left:50%;top:18px;transform:translateX(-50%);background:#000000d0;border:1px solid #ffffff33;color:#fff;padding:10px 14px;border-radius:12px;font-weight:800;opacity:0;transition:.3s;pointer-events:none;z-index:40}
+.toast.show{opacity:1}#fog{position:fixed;inset:0;backdrop-filter:blur(4px) brightness(0.5);background:radial-gradient(circle at 50% 40%, #ffffff22, #00000088);opacity:0;transition:.25s;pointer-events:none;z-index:30}
+#fog.show{opacity:1}footer{opacity:.8;font-size:12px;margin:16px 0}@media(min-width:720px){.grid{grid-template-columns:repeat(6,1fr)}}
